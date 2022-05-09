@@ -1,0 +1,18 @@
+s = set([1, 2, 3, 1,])
+print(s)
+s2 = set("hello")
+for i in s2:
+    print(i, end=" ")
+print(len(s2))
+
+s = set([1, 2, 3])
+s1 = set([4, 2, 6])
+s3 = s 
+print(s3)
+
+s = set([1, 2, 3, 4])
+s1 = set([2, 4, 6])
+s2 = s - s1
+print(s2)
+s3 = s1 - s
+print(s3)
