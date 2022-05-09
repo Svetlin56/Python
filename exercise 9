@@ -1,0 +1,26 @@
+num=int(input("Vuvedete chisllo: "))
+k=1
+while k<=num//2:
+    if num%k==0:
+        print("deli se na",k )
+    k=k+1
+print("Deli se na", num)
+
+
+tup1 =()
+n1 =int(input("enter value:"))
+for i in range(1, n1 + 1):
+    tup1+=(i,)
+    tup2=sorted(tup1, reverse=True)
+print(tup1)
+print(tup2)
+
+
+
+import random
+random.seed()
+list = [random.randint(10, 20) for i in range(16)]
+
+for i in range(0, 20, 3):
+    list.insert(i+2, list[i]+list[i+i])
+print(list)
