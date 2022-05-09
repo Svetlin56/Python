@@ -1,0 +1,33 @@
+d = dict()
+d1 = dict(name="ivan", last_name="petrov")
+d3 = dict([ ("name", "polina"), ("l_name", "koleva")])  
+print(d3)
+print(d1)
+
+
+d ={}
+d["name"] = "petyr"
+d["l_name"] = "kolev"
+d = {"name": "ivan", "l_name": "ivanov"}
+print(d)
+
+
+d = {"name": "ivan", "l_name": "ivanov"}
+d["name"]
+#print(d["fname"])
+b = "fname" in d
+print(b) 
+
+len(d)
+print(len(d))
+
+d["s_name"] = "petrov"
+print(d)
+
+del d["s_name"]
+print(d)
+
+keys=list(d.keys())
+keys.sort()
+for key in keys:
+    print("{0} => {1} ".format(key, d[key]), end=" ")
