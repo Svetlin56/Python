@@ -1,0 +1,25 @@
+k=(7,5,3,)
+print(k)
+
+tup=tuple([10,20,30])
+print(tup)
+
+tup1=tuple("Python")
+print(tup1)
+tup2=tuple()
+
+
+
+c = (7, 5, 3, 6, 1)
+print(k[0])
+print(k[2:3])
+print(7 in k)
+print(k * 3)
+tup =k +(2, 4)
+print(tup)
+
+tup = (7, 5, 3, 6, 1)
+print(tup.index(1))
+print(tup.count(5))
+for i in tup:
+    print(i, end=" ")
