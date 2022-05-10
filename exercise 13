@@ -1,0 +1,62 @@
+t = ()
+print(t, len(t))
+t = "hi",
+print(t, len(t))
+t = "hi", "python", "my" , "friend"
+print(t, len(t))
+a,b,c,d = t
+print(a,b,c,d)
+
+
+
+s = set()
+print(s, len(s))
+s = {1,2,3}
+print(s,len(s))
+s1 = set([4,5,6,1])
+print(s1, len(s1))
+print({x for x in s1 if x >=2})
+
+
+
+tel = {}
+print(tel)
+tel = dict()
+print(tel)
+tel = {"ivan":"123-123","lili":"345-345","maria":"546-546","georgi": "867-867"}
+print(tel)
+print(tel["ivan"])
+del tel["ivan"]
+print(tel)
+print("lili" in tel)
+print("ivan" not in tel)
+
+print(list(tel))
+print(sorted(tel))
+print(tel.keys())
+tel = dict([("ivan","123-123"),("lili","345-345")])
+print(tel)
+
+print({x:x**3 for x in (1,3,5,7)})
+print({x:x**3 for x in range(11)})
+
+print(dict(ivan=123,lili=345,maria=543))
+for k,v in tel.items():
+    print("{0}=>{1}".format(k,v))
+
+li = [-1,22,1,-2,4,5]
+for i,v in enumerate(li):
+    print(f"{i}=>{v}")
+
+for i in range(1,30,2):
+    print(i, end=" ")
+print()
+for i in reversed(range(1,30,2)):
+    print(i, end=" ")
+print()
+
+for x in sorted(set(li)):
+    print(x, end=" ")
+print()
+print(li)
+    
