@@ -1,0 +1,76 @@
+def fib(n):
+    '''Prints a Fibonachi series up to n'''
+    a,b=0,1
+    while a<n:
+        print (a, end=" ")
+        a,b=b, a+b
+    print()
+
+def fib1(n=1000):
+    '''Prints a Fibonachi series up to n'''
+    result=[]
+    a,b=0,1
+    while a<n:
+        result.append(a) #result=result+[a] #result+=[a]
+        a,b=b, a+b
+    return result
+
+def add(a,L=[]):
+    L.append(a)
+    return L
+
+def add1(a=0,L=None):
+    if L is None:
+        L=[]
+    L.append(a)
+    return L
+
+def func(a):
+    pass
+
+def params(pos1,/,pos_key,*,key1):
+    print(pos1, pos_key, key1)
+
+def params1(pos1, pos2,/):
+    pass
+
+def params2(*,key1, key2):
+    pass
+def params3(pos_key1, pos_key2):
+    pass
+
+def lambdaf(x):
+    return lambda y, z: x-(y*z)
+
+fib(100)
+fib(600)
+print(fib) #<function fib at 0x0000018B2179E1F0>
+f=fib
+f(10000)
+print(fib(45)) #none
+
+print (fib1(29900))
+print(fib1())
+
+print (add(1))
+print (add(2))
+print (add(3))
+
+print (add1(1))
+print (add1(2))
+print (add1(3))
+print (add1(33, [1,2,3]))
+print (add1(L=[3]))
+
+print(1, 2 , 3, end="#")
+print(1, 2 , 3,sep=";")
+
+params(1,2,key1=3)
+params(22,2,key1=11)
+params(33, pos_key=55, key1=21)
+
+print(lambdaf)
+print(lambdaf(3)) #x=3
+f= lambdaf(3) #x=3
+print(f)
+print(f(10, 2)) #y=10 , z=2
