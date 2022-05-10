@@ -1,0 +1,33 @@
+def squares(n):
+    square = []
+    for i in range(n):
+        square.append(i**2)
+    return square
+
+
+print(squares(10))
+
+square = list(map(lambda x: x**2, range(11)))
+print(square)
+
+square = [x**2 for x in range(11)]
+print(square)
+
+listcomp = [(x,y) for x in [1,2,3] for y in [3,2,1] if x!=y]
+print(listcomp)
+
+
+
+listcomp=[]
+comp = []
+for x in [1,2,3]:
+    for y in [3,2,1]:
+        if x!=y:
+            listcomp.append((x, y))
+            comp += [x,y]
+print(listcomp)       
+print(comp)
+
+vec = [-4,-2,0,1,2]
+print([x*2 for x in vec])
+print([abs(x) for x in vec])
