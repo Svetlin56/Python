@@ -1,0 +1,29 @@
+import math
+
+print(math.pi)
+print([str(round(math.pi, i)) for i in range(1, 6)])
+
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+print([[row[i] for row in matrix] for i in range(3)])
+
+trans = []
+for i in range(3):
+    trans_row = []
+    for row in matrix:
+        trans_row.append(row[i])
+    trans.append(trans_row)
+print(trans)
+
+
+a = [-1,1,2,3,4,-4]
+print(a)
+del a[0]
+print(a)
+del a[2:4]
+print(a)
