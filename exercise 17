@@ -1,0 +1,39 @@
+def prime_number(y):
+    for i in range(2,y):
+        if y % i == 0:
+            return 0
+    return 1
+def prime_numbers():
+    prime_numbers=[]
+    for i in range(2, y+1):
+        for x in range(2, i):
+            if i % x ==0:
+                break
+        else:
+            prime_numbers.append(i)
+    return prime_numbers
+y=int(input("Enter y: "))
+print(prime_number(y))
+print(prime_numbers())
+
+
+
+
+while True:
+    mydict = {
+        "bread" : "хляб",
+        "apple" : "ябълка"
+}
+    choice = int(input("Choose from 1 to 4: "))
+    if choice == 1:
+        a = input("Enter a word: ")
+        if a in mydict:
+            print("True")
+        else:
+            print("False")
+            
+    if choice == 2:
+        name = input("Enter a key: ")
+        score = input("Enter a value: ")
+        mydict[name] = score
+        print(mydict)
