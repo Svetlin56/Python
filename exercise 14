@@ -1,0 +1,30 @@
+x = int(input("Enter x: "))
+nums = []
+
+for i in range(x):
+    num = int(input(f"Please wnter number {i + 1}: "))
+    nums.append(num)
+max_index = []
+max_index += [max(nums), nums.index(max(nums))]
+print(max_index)
+
+
+
+x = input("Enter text: ")
+y = dict()
+for i in x:
+    y[i] = x.replace(i, " ",1)
+print(y)
+
+
+
+
+a = int(input("Enter a value: "))
+b = []
+for i in range(a):
+    b.append(i+1)
+print(b)
+c = b[::-1]
+print(c)
+dict1 = dict(zip(b, c))
+print(dict1)
