@@ -1,0 +1,27 @@
+#file Calculator.py
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def multi(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+    
+    
+    
+    
+    from Calculator import*
+a=10
+b=5
+c=add(a,b)
+print(c)
+
+c=sub(a,b)
+print(c)
+
+c=multi(a,b)
+print(c)
+
+c=div(a,b)
+print(c)
