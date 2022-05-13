@@ -1,0 +1,34 @@
+class Person1:
+    def __init__(self, firstName, lastName, age, nationality):
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+        self.nationality = nationality
+        
+    def printName(self):
+        print(self.firstName, self.lastName, self.age, self.nationality)
+
+MyPerson = Person1("Simona", "Aleksandrova", 21, "Bulgaria")
+MyPerson.printName()
+
+
+
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+  def university(self):
+    print("Welcome", self.firstname, self.lastname, "to the Technical University of Sofia", self.graduationyear)
+
+y = Student("Ivan", "Ivanov", 2020)
+y.university()
