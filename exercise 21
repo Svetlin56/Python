@@ -1,0 +1,24 @@
+# file Calc2.py
+def S1(a,b,h):
+    return 1/2*(a*h)
+def S2(a,b):
+    return a*b
+def S3(a,b):
+    return (a*b)/2
+def S4(a,b,h):
+    return (a+b)*h/2
+    
+    
+    
+from Calc2 import*
+a=10
+b=5
+h=6
+r=S1(a,b,h)
+print(r)
+y=S2(a,b)
+print(y)
+v=S3(a,b)
+print(v)
+p=S4(a,b,h)
+print(p)
