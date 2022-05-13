@@ -1,0 +1,11 @@
+# file 123.py
+bulgaria-sofia
+france-paris
+italy-rome
+
+
+
+my_file=open("123.txt","r")
+for line in my_file:
+    print(line)
+my_file.close()
