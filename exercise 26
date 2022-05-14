@@ -1,0 +1,32 @@
+capitals={"USA":"Washington",
+          "India":"New Delhi",
+          "Italy":"Rome",
+          "France":"Paris"}
+capitals.update({"Germany":"Berlin"})
+capitals.update({"USA":"Las Vegas"})
+capitals.pop("India")
+print(capitals["Italy"])
+print(capitals.get("Germany"))
+print(capitals.keys())
+print(capitals.values())
+for key, value in capitals.items():
+    print(key, value)
+    
+    
+    
+    
+    
+name ="svetlin Vatev"
+if(name[0].islower()):
+    name=name.capitalize()
+first_name=name[:7].upper()
+last_name=name[8:].lower()
+last_character=name[-3]
+print(first_name)
+print(last_name)
+print(last_character)
+
+def y(first_name,last_name,age):
+    print("Hello "+first_name+" "+last_name+" "+age)
+    print("Have a nice day")
+y("Svetlin","Vatev",str(19))
