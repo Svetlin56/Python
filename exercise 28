@@ -1,0 +1,45 @@
+list=[]
+list2=[]
+while True:
+    y=input("number:")
+    if y=="STOP":
+        break
+    elem = int(y)
+    list.append(elem)
+    if elem % 7 == 0:
+        list2.append(elem)
+print(list)
+print(list2)
+print(f" sum: {sum(list)-sum(list2)}")
+print(f"max={max(list)}")
+print(f"{(len(list2)/len(list))*100:.2f}% delqt se na 7")
+
+
+
+
+
+n=input("Enter a number:")
+txt="1"
+k=1
+while str(k) !=n:
+    k=k+1
+    txt=txt+"+"+str(k)
+print(txt,"=", eval(txt))
+
+
+
+
+import random
+print("Type number between 1..10!")
+b = random.randint(1, 10)
+while True:
+    a = int(input())
+    if a == 0:
+        print("Game over")
+        break
+    elif a == b:
+        print("You guessed the number!")
+        break
+    elif a != b:
+        print("Sorry, try again")
+        
