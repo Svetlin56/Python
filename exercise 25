@@ -1,0 +1,32 @@
+drinks=["coffee","soda","tea"]
+dinner=["pizza","spaghetti","hotdog"]
+dessert=["cake","pudding","ice cream"]
+food=[drinks,dinner,dessert]
+print(food[0][1])
+print(food[1][2])
+print(food[2][1])
+
+
+
+
+
+Student=("Svetlin",20,"male")
+print(Student.count(19))
+print(Student.index("Svetlin"))
+for z in Student:
+    print(z)
+if "male" in Student:
+    print("You are a male!")
+    
+    
+    
+    
+    utensils={"fork","spoon","knife"}
+dishes={"bowl","plate","cup","knife"}
+dinner_table=utensils.union(dishes)
+utensils.update(dishes)
+utensils.add("napkin")
+utensils.remove("knife")
+for i in dinner_table:
+    print(i)
+print(utensils.intersection(dishes))
