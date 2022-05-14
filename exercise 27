@@ -1,0 +1,38 @@
+def multiply(num1,num2):
+    return num1*num2
+x=multiply(5,7)
+print(x)
+
+
+
+def x(first,middle,last):
+    print("Hello "+first+" "+middle+" "+last)
+x("Svetlin","Vatev","Petrov")
+
+
+
+print(round(abs(float(input("Enter a positive number: ")))))
+
+
+
+def add(*stuff):
+    sum = 0
+    for i in stuff:
+        sum+=i
+    return  sum
+print(add(2,4,43,1))
+
+
+
+print("The {vehicle} is a brand new {y1}".format(vehicle="car", y1="Mercedes"))
+
+
+
+
+try:
+    x=int(input("Enter a num1: "))
+    y=int(input("Enter a num2: "))
+    result=x/y
+    print(result)
+except Exception:
+    print("Something is wrong: ")
