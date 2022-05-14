@@ -1,0 +1,48 @@
+age = int(input("Enter age:" ))
+if age >=18:
+    print("You are an adult")
+else:
+    print("You are a child")
+    
+    
+   
+   
+   
+   rows=int(input("Hom many rows: "))
+colums=int(input("Hom many colums: "))
+symbol=input("Enter a symbol: ")
+
+for x in range(rows):
+    for y in range(colums):
+        print(symbol, end="")
+    print()
+    
+    
+    
+    
+    
+    for x in range(1,21):
+    if x ==13:
+        pass
+    else:
+        print(x)
+        
+        
+        
+        
+        
+        
+        food=["pizza","bruscetta","spaghetti","brulle","banitsa"]
+food[1]="mozzarella"
+food.append("kufteta")
+food.remove("brulle")
+food.pop()
+food.insert(1,"lasagnia")
+food.sort()
+for i in food:
+    print(i)
+        
+        
+        
+        
+        
