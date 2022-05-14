@@ -1,0 +1,21 @@
+a = ["foo","bar","baz","qux"]
+len(a)
+
+any([False,False,False])
+False
+any([False,True,False])
+True
+
+def f(qty,item,price):
+    print(f"{qty} {item} cost ${price:.2f}")
+f(6, "bananas", 1.74)
+
+
+"<keyword>=<value>"
+f(qty=6, item="bananas", price=1.74)
+
+"<name>=<value>"
+def f(qty=6, item="bananas", price=1.74):
+    print(f"{qty} {item} cost ${price:.2f}")
+
+f(4, "apples", 2.24)
