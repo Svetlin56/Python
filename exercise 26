@@ -16,7 +16,7 @@ for key, value in capitals.items():
     
     
     
-name ="svetlin Vatev"
+name ="Svetlin Vatev"
 if(name[0].islower()):
     name=name.capitalize()
 first_name=name[:7].upper()
