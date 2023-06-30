@@ -5,8 +5,7 @@ else:
     print("You are a child")
     
     
-   
-   
+
    
    rows=int(input("Hom many rows: "))
 colums=int(input("Hom many colums: "))
@@ -17,9 +16,7 @@ for x in range(rows):
         print(symbol, end="")
     print()
     
-    
-    
-    
+  
     
     for x in range(1,21):
     if x ==13:
@@ -27,10 +24,7 @@ for x in range(rows):
     else:
         print(x)
         
-        
-        
-        
-        
+     
         
         food=["pizza","bruscetta","spaghetti","brulle","banitsa"]
 food[1]="mozzarella"
@@ -41,8 +35,3 @@ food.insert(1,"lasagnia")
 food.sort()
 for i in food:
     print(i)
-        
-        
-        
-        
-        
