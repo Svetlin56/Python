@@ -7,7 +7,7 @@ def fib(n):
     print()
 
 def fib1(n=1000):
-    '''Prints a Fibonachi series up to n'''
+
     result=[]
     a,b=0,1
     while a<n:
@@ -44,10 +44,10 @@ def lambdaf(x):
 
 fib(100)
 fib(600)
-print(fib) #<function fib at 0x0000018B2179E1F0>
+print(fib) 
 f=fib
 f(10000)
-print(fib(45)) #none
+print(fib(45))
 
 print (fib1(29900))
 print(fib1())
