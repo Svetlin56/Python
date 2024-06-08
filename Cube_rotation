@@ -1,0 +1,80 @@
+from ursina import *
+app = Ursina()
+
+cube_texture = load_texture('white_cube')
+grass_texture = load_texture('grass')
+button_click_sound = Audio('click', autoplay=False)
+
+
+cube = Entity(
+    model='cube',
+    texture=cube_texture,
+    color=color.rgb(134, 218, 247),
+    scale=2.5,
+    collider='box'
+)
+
+directional_light = DirectionalLight(
+    rotation=(45, 45, 45),
+    shadows=True,
+    shadow_map_resolution=(2048, 2048),
+)
+
+directional_light2 = DirectionalLight(
+    rotation=(-45, -45, -45),
+    shadows=True,
+    shadow_map_resolution=(2048, 2048),
+)
+
+directional_light.shadow_pcf = 1
+directional_light2.shadow_pcf = 1
+
+ambient_light = AmbientLight(
+    color=color.rgb(100, 100, 100)
+)
+
+ground = Entity(
+    model='plane',
+    texture=grass_texture,
+    scale=(10, 1, 10),
+    position=(0, -2, 0),
+    collider='box'
+)
+
+animation = None
+edges = []
+
+def spin():
+    global animation
+    animation = cube.animate('rotation_y', cube.rotation_y + 360, duration=2, curve=curve.in_out_expo)
+    start_button.color = color.lime
+    stop_button.color = color.red
+    button_click_sound.play()
+
+
+def stop_spin():
+    global animation
+    if animation:
+        animation.pause()
+        animation = None
+        start_button.color = color.green
+        stop_button.color = color.gray
+        button_click_sound.play()
+
+
+start_button = Button(text='Start Spin',
+                      text_color=color.black,
+                      color=color.green,
+                      scale=(0.1, 0.05),
+                      position=(-0.5, 0.4))
+start_button.on_click = spin
+
+stop_button = Button(text='Stop Spin',
+                     text_color=color.black,
+                     color=color.gray,
+                     scale=(0.1, 0.05),
+                     position=(0.5, 0.4))
+stop_button.on_click = stop_spin
+
+EditorCamera()
+app.run()
